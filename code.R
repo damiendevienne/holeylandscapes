@@ -118,3 +118,6 @@ scale_color_manual(values = c("#ca001e", "#91c5de","orange","grey")) +
 labs(x="\u03bb2/\u03bb1", y="") +
 theme_bw()
 
+### PLOTS side by side
+grid.arrange(plot1, plot2, ncol=2, widths=c(1.5,2))
+require(gridExtra)
